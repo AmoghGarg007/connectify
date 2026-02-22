@@ -1,0 +1,62 @@
+/* =========================================
+   SAFE GLOBAL RESET
+   (Neutral — does NOT override UI styling)
+========================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================================
+   HTML + BODY BASE
+========================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #020617;
+
+  /* DO NOT add layout rules here */
+  /* App.css controls design */
+}
+
+/* =========================================
+   ROOT CONTAINER
+========================================= */
+
+#root {
+  min-height: 100vh;
+}
+
+/* =========================================
+   SAFE TYPOGRAPHY
+========================================= */
+
+body,
+button,
+input,
+textarea {
+  font-family: Inter, system-ui, sans-serif;
+}
+
+/* =========================================
+   LINKS
+========================================= */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =========================================
+   IMPORTANT:
+   DO NOT STYLE BUTTONS HERE
+   Let App.css control appearance
+========================================= */
